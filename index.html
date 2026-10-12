@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Flow with Alarm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-card">
+        <header>
+            <h1>Task Flow</h1>
+            <p class="subtitle">Set reminders and never miss a task.</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="What needs to be done?" autocomplete="off">
+            <input type="time" id="taskTime" id="timePicker">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <div class="stats-bar">
+            <span id="taskCount">0 tasks remaining</span>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Alarm sound audio element -->
+    <audio id="alarmSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
